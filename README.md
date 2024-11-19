@@ -21,7 +21,7 @@ To run the Idea Management System locally, follow these steps:
 
 1. **Clone the Repository**:
     ```bash
-    git clone https://github.com/yourusername/idea-management-system.git
+    git clone https://github.com/Luke-356/IdeaUniversity.git
     ```
 
 2. **Setup the Environment**:
