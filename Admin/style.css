@@ -1,0 +1,394 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input[type="date"],
+textarea {
+  font-family: "Roboto", sans-serif;
+}
+
+/*navigation*/
+.header {
+  width: 262px;
+  height: 100vh;
+  background-color: #363636;
+  position: fixed;
+}
+
+.logo-wrap {
+  display: flex;
+}
+
+#logo {
+  margin: 0 auto;
+  margin-top: 1.6rem;
+}
+
+.nav-wrapper {
+  margin-top: 4rem;
+}
+
+.nav-links {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.nav-hover {
+  padding: 1.2rem 2rem 1.2rem 2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.7rem;
+  border-radius: 18px;
+  transition: 0.2s;
+}
+
+.nav-hover:hover {
+  background-color: #464646;
+}
+.nav-links label {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 300;
+  pointer-events: none;
+}
+
+.nav-links label,
+.nav-links img {
+  user-select: none;
+}
+
+#home-icon,
+#category-icon {
+  margin-top: -4px;
+}
+
+#register-icon {
+  margin-top: -9px;
+}
+
+/*body*/
+.container {
+  margin-left: 280px;
+  height: 100vh;
+  width: auto;
+  position: relative;
+  overflow: auto;
+  z-index: 1;
+}
+
+.form-wrap {
+  width: 100%;
+  padding-top: 2.4rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  position: relative;
+}
+
+/*register*/
+.register-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.register-head p {
+  font-size: 36px;
+  font-weight: 500;
+  color: #5a5a5a;
+  position: relative;
+}
+
+.register-head p::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 3.5rem;
+  border-top: 4px solid #5a5a5a;
+  width: 140px;
+  border-radius: 2rem;
+}
+
+.bread-crump {
+  margin-top: 2.5rem;
+}
+
+.bread-crump a {
+  text-decoration: none;
+  color: #363636;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.bread-crump a:hover {
+  text-decoration: underline;
+}
+
+#this {
+  font-weight: 500;
+}
+
+.register-body {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 5rem;
+}
+
+.register-body input,
+.register-body select,
+.login-body input,
+.category-body input,
+textarea {
+  border: none;
+  background-color: #e5e5e5;
+  padding: 1.2rem 1rem 1.2rem 1rem;
+  width: 100%;
+  margin-bottom: 1.8rem;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.register-body label,
+.category-body label {
+  font-size: 18px;
+  font-weight: 400;
+  color: #464646;
+}
+
+.register-btn {
+  margin-top: 1.2rem;
+}
+
+.register-btn,
+.register-btn div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.register-btn a {
+  border: 2px solid #363636;
+  color: #363636;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}
+
+.register-btn button,
+.cate-btn {
+  border: none;
+  padding: 1.5rem 2.8rem;
+  cursor: pointer;
+  color: white;
+  background-color: #363636;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+/*radio button*/
+.gender-type {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+}
+
+.gender-type input[type="radio"] {
+  display: none;
+}
+
+.gender-type input[type="radio"]:checked + label {
+  background-color: #656565;
+  color: white;
+}
+
+.radio-div {
+  display: flex;
+  align-items: center;
+  margin-top: 0.55rem;
+  gap: 1rem;
+}
+
+.radio-div label {
+  border: 2px solid #656565;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+/* Login Page */
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-body {
+  width: 380px;
+}
+.login-body h1 {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 500;
+  font-size: 37px;
+}
+
+.terms {
+  text-align: center;
+}
+
+.terms a {
+  color: #0077ff;
+}
+
+/* Logout */
+.logout-link {
+  color: white;
+}
+
+/* category */
+.category-body {
+  margin-top: 5rem;
+}
+
+.category-wrap {
+  display: grid;
+  grid-template-columns: repeat(autofit, minmax(300px, 1fr));
+  column-gap: 5rem;
+}
+
+textarea {
+  resize: none;
+  height: 183.11px;
+}
+
+.cate-div {
+  margin-top: 0;
+  gap: 2rem;
+}
+
+.cate-div a {
+  cursor: pointer;
+}
+
+/* dashboard */
+.dashboard-wrap {
+  margin-top: 6rem;
+}
+
+.dashboard-count {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.dashboard-count div {
+  background-color: #e9e9e9;
+  text-align: center;
+}
+
+.dashboard-count p {
+  font-size: 50px;
+  color: #5a5a5a;
+  margin-top: 1rem;
+}
+
+.staff-div,
+.topic-div,
+.idea-div {
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.dashboard-count img {
+  margin-top: 0.8rem;
+}
+
+.dashboard-table {
+  display: flex;
+  margin-top: 2rem;
+  gap: 1rem;
+  width: 100%;
+}
+
+.dashboard-table div {
+  width: 100%;
+  text-align: center;
+  background-color: #e9e9e9;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.dashboard-table div h3 {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.dashboard-table table {
+  text-align: center;
+  background-color: #e9e9e9;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+.dashboard-table table th {
+  background-color: #dadada;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 19px;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+.dashboard-table table td {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 18px;
+  border-bottom: 1px solid #cccccc;
+}
+
+.staff-div-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.staff-div-head div {
+  border: 1px solid #a7a7a7;
+  border-radius: 100px;
+  width: 32%;
+  height: 0px;
+}
+
+.staff-div-head span {
+  font-size: 20px;
+}
+
+.staff-div-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
