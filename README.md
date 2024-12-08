@@ -1,7 +1,7 @@
 # Idea Management System
 
 ## Overview
-The **IdeaUniversity** is a collaborative platform developed as part of a final-year academic group project at **Idea University**. The project was designed to enable university staff to share, contribute, and manage ideas in an organized and efficient manner. The system resembles a social media platform where users can submit and interact with ideas posted by their colleagues.
+The **IdeaUniversity** is a collaborative platform developed as part of a final-year academic group project at **University of Greenwich**. The project was designed to enable university staff to share, contribute, and manage ideas in an organized and efficient manner. The system resembles a social media platform where users can submit and interact with ideas posted by their colleagues.
 
 ## Features
 - **User Registration and Authentication**: Secure user authentication allowing staff to register, log in, and manage their profiles.
